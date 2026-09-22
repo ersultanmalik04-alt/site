@@ -1,0 +1,4 @@
+{
+  "title": "STP",
+  "text": "STP предотвращает L2-петли.\nRoot Bridge — switch с лучшим BID.\nПроверка:\nshow spanning-tree\nshow spanning-tree vlan 10"
+}

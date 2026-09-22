@@ -1,0 +1,4 @@
+{
+  "title": "MikroTik",
+  "text": "/interface print\n/interface ethernet print\n/ip address print\n/ip route print\n/ip arp print\n/ip firewall filter print\n/tool ping 8.8.8.8"
+}

@@ -1,0 +1,4 @@
+{
+  "title": "NAT",
+  "text": "NAT преобразует IP-адреса.\nPAT — много внутренних адресов через один внешний.\nCisco:\nshow ip nat translations\nshow ip nat statistics\nclear ip nat translation *"
+}

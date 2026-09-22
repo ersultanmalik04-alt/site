@@ -1,0 +1,4 @@
+{
+  "title": "Cisco",
+  "text": "show ip interface brief\nshow interfaces status\nshow interfaces counters errors\nshow mac address-table\nshow cdp neighbors detail\nshow lldp neighbors detail\nshow running-config"
+}

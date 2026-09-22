@@ -1,0 +1,4 @@
+{
+  "title": "OSPF",
+  "text": "OSPF — динамическая маршрутизация.\nAD: 110.\nПроверка:\nshow ip ospf neighbor\nshow ip route ospf\nshow ip ospf interface\nПроверить: Area, Hello/Dead, MTU, Authentication, Network Type."
+}

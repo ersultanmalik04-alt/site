@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IT Cheat Sheet</title>
+<style>
+body{font-family:Arial,sans-serif;max-width:700px;margin:30px auto;padding:0 18px}
+a{display:block;padding:14px;margin:8px 0;background:#eee;border-radius:10px;text-decoration:none;color:#111}
+pre{white-space:pre-wrap;font-size:16px;line-height:1.5}
+</style>
+</head>
+<body>
+<h1>IT Cheat Sheet</h1>
+<p>Темы для проверки HTTP-запросов с часов.</p>
+<div id="list"></div>
+<script>
+const topics = {"vlan": {"title": "VLAN", "text": "VLAN — логическое разделение L2 сети.\nAccess — один VLAN.\nTrunk — несколько VLAN.\nNative VLAN — нетегированный трафик.\nCisco: show vlan brief\nshow interfaces trunk"}, "ospf": {"title": "OSPF", "text": "OSPF — динамическая маршрутизация.\nAD: 110.\nПроверка:\nshow ip ospf neighbor\nshow ip route ospf\nshow ip ospf interface\nПроверить: Area, Hello/Dead, MTU, Authentication, Network Type."}, "nat": {"title": "NAT", "text": "NAT преобразует IP-адреса.\nPAT — много внутренних адресов через один внешний.\nCisco:\nshow ip nat translations\nshow ip nat statistics\nclear ip nat translation *"}, "acl": {"title": "ACL", "text": "ACL фильтрует трафик.\nStandard — обычно по source IP.\nExtended — source, destination, protocol, port.\nВажно: в конце неявный deny."}, "stp": {"title": "STP", "text": "STP предотвращает L2-петли.\nRoot Bridge — switch с лучшим BID.\nПроверка:\nshow spanning-tree\nshow spanning-tree vlan 10"}, "cisco": {"title": "Cisco", "text": "show ip interface brief\nshow interfaces status\nshow interfaces counters errors\nshow mac address-table\nshow cdp neighbors detail\nshow lldp neighbors detail\nshow running-config"}, "mikrotik": {"title": "MikroTik", "text": "/interface print\n/interface ethernet print\n/ip address print\n/ip route print\n/ip arp print\n/ip firewall filter print\n/tool ping 8.8.8.8"}, "cucm": {"title": "CUCM", "text": "SIP — сигнализация вызова.\nCDR — история звонков.\nTranslation Pattern — изменение/маршрутизация номера.\nDial Plan: Route Pattern → Route List → Route Group → Gateway."}};
+const list=document.getElementById('list');
+for(const [id,t] of Object.entries(topics)){
+  const a=document.createElement('a');
+  a.href='topics/'+id+'.json';
+  a.textContent=t.title;
+  list.appendChild(a);
+}
+</script>
+</body>
+</html>

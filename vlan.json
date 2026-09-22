@@ -1,0 +1,4 @@
+{
+  "title": "VLAN",
+  "text": "VLAN — логическое разделение L2 сети.\nAccess — один VLAN.\nTrunk — несколько VLAN.\nNative VLAN — нетегированный трафик.\nCisco: show vlan brief\nshow interfaces trunk"
+}

@@ -1,0 +1,4 @@
+{
+  "title": "CUCM",
+  "text": "SIP — сигнализация вызова.\nCDR — история звонков.\nTranslation Pattern — изменение/маршрутизация номера.\nDial Plan: Route Pattern → Route List → Route Group → Gateway."
+}
